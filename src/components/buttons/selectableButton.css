@@ -1,0 +1,17 @@
+.selectable-button {
+    margin: 10px;
+}
+
+.selectable-button.selected {
+    background: white;
+    color: #31cfda;
+}
+
+.selectable-button.unselected {
+    background-color: #31cfda;
+    color: white;
+}
+
+.selectable-button span {
+    margin-left: 10px;
+}
