@@ -1,0 +1,29 @@
+.btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 3px;
+    font-family: Roboto, sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    height: 45px;
+}
+
+.primary {
+    color: white;
+    background-color: #317bda;
+}
+
+.outline {
+    color: white;
+    border: solid 1px white;
+}
+
+.aqua {
+    color: white;
+    background-color: #31cfda;
+    border-radius: 5px;
+    border: solid 1px #31cfda;
+}

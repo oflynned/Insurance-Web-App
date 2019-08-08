@@ -1,0 +1,88 @@
+.login {
+    min-height: 100vh;
+}
+
+.login .nav-bar {
+    opacity: 0.12;
+    height: 30px;
+    background-color: white;
+}
+
+.login .nav-bar span {
+    opacity: 1;
+    color: red;
+}
+
+.login .shadow {
+    border-radius: 3px;
+    box-shadow: 0 2px 2px 0 #5b7289;
+}
+
+.login .content {
+    width: 350px;
+    text-align: center;
+    margin: 60px auto;
+}
+
+.login .content .card .card-content {
+    margin: 20px;
+    padding: 10px 0 20px;
+}
+
+.login .card {
+    background: white;
+}
+
+.login .card h3 {
+    font-family: Roboto, sans-serif;
+    font-size: 18px;
+    line-height: 1.56;
+    text-align: center;
+    color: #5b7289;
+}
+
+.login .card .edit-text {
+    margin-top: 40px;
+}
+
+.login .card .account-actions {
+    margin: 22px 0 35px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.login .card .checkbox {
+    vertical-align: top;
+    float: left;
+}
+
+.login .card a.forgotten-password {
+    padding-top: 4px;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    font-weight: 500;
+    float: right;
+    color: #317bda;
+}
+
+/*on large screens greater than 768px in height, the remaining space needs to be stickied to the bottom of the page*/
+@media only screen and (min-height: 768px) {
+    .login .footer {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+    }
+}
+
+.login .footer .line {
+    margin: 32px auto 0;
+}
+
+.login .footer p {
+    width: fit-content;
+    margin: 16px auto;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 12px;
+    line-height: 1.42;
+}
