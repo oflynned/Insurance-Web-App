@@ -3,14 +3,20 @@
 }
 
 .login .nav-bar {
-    opacity: 0.12;
+    background-color: rgba(255, 255, 255, 0.1);
     height: 30px;
-    background-color: white;
 }
 
-.login .nav-bar span {
+.login .nav-bar .action {
+    width: fit-content;
+    line-height: 30px;
+    margin-left: 110px;
     opacity: 1;
-    color: red;
+    color: white;
+    font-family: Roboto, sans-serif;
+    font-size: 9px;
+    font-weight: 500;
+    letter-spacing: 0.75px;
 }
 
 .login .shadow {

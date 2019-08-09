@@ -55,14 +55,18 @@ class Login extends Component {
     this.logIn(username, password);
   };
 
+  redirectToLink = (link = "https://qover.me") => {
+    window.open(link, "_blank");
+  };
+
   render () {
     return (
       this.state.loggedIn ?
         <Redirect to="/super-secret-dashboard"/> :
         <div className={"login gradient"}>
           <div className={"nav-bar"}>
-            <div className={"action"}>
-              {/*<span>&lt;</span><span>QOVER.ME</span>*/}
+            <div className={"action"} onClick={() => this.redirectToLink()}>
+              <span>&lt;</span><span> QOVER.ME</span>
             </div>
           </div>
 
@@ -82,7 +86,8 @@ class Login extends Component {
               </div>
             </form>
 
-            <Button label={"Don't have an account? Ask for access"} theme={"outline"}/>
+            <Button label={"Don't have an account? Ask for access"} theme={"outline"}
+                    onClick={() => this.redirectToLink()}/>
           </div>
 
           <div className={"footer"}>
