@@ -6,6 +6,7 @@ import Checkbox from "../components/input/checkbox";
 import Button from "../components/buttons/button";
 
 import "./login.css";
+
 import { getKey, saveKey } from "../common/savedPrefs";
 
 const { REACT_APP_USERNAME, REACT_APP_PASSWORD } = process.env;
@@ -57,7 +58,7 @@ class Login extends Component {
   render () {
     return (
       this.state.loggedIn ?
-        <Redirect to="/quote"/> :
+        <Redirect to="/super-secret-dashboard"/> :
         <div className={"login gradient"}>
           <div className={"nav-bar"}>
             <div className={"action"}>
