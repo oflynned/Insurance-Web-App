@@ -2,9 +2,9 @@ import React from "react";
 
 import "./editText.css";
 
-const EditText = ({ label, type }) =>
+const EditText = ({ label, type, onChange }) =>
   <div className={"edit-text"}>
-    <input type={type} required/>
+    <input type={type} onChange={onChange} required/>
     <span className="highlight"/>
     <span className="bar"/>
     <label>{label}</label>
