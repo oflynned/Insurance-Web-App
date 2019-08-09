@@ -5,8 +5,6 @@ import Row from "../components/common/row";
 import Switch from "../components/input/switch";
 import PlanCard from "../components/card/planCard";
 
-import plans from "../assets/json/insurancePlans";
-
 import "./plans.css";
 
 class Plans extends Component {
@@ -42,7 +40,7 @@ class Plans extends Component {
           </div>
           <Row>
             {
-              plans.map((plan, index) =>
+              this.props.plans.map((plan, index) =>
                 <Col>
                   <PlanCard plan={plan}
                             selected={index === selectedIndex}
