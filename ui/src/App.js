@@ -6,8 +6,7 @@ import "./App.css";
 import PrivateRoute from "./components/authentication/privateRoute";
 
 import Login from "./screens/login";
-import Quote from "./screens/quote";
-import Plans from "./screens/plans";
+import Dashboard from "./screens/dashboard";
 import PageNotFound from "./screens/pageNotFound";
 
 function App () {
@@ -17,8 +16,7 @@ function App () {
         <Switch>
           <Route exact path="/" component={Login}/>
           <Route exact path="/login" component={Login}/>
-          <PrivateRoute exact path="/quote" component={Quote}/>
-          <PrivateRoute exact path="/plans" component={Plans}/>
+          <PrivateRoute exact path="/super-secret-dashboard" component={Dashboard}/>
           <Route exact path="/404" component={PageNotFound}/>
           <Redirect to="/404"/>
         </Switch>
