@@ -2,12 +2,14 @@ import React from "react";
 
 import "./textField.css";
 
-const TextField = ({ fieldName, label, type, descriptor, error, onChange }) => (
+const TextField = ({ fieldName, label, type, descriptor, showError, onChange }) => (
   <div className={"text-field " + fieldName}>
     <label htmlFor={fieldName}>{label}</label>
-    <input className={fieldName} type={type} name={fieldName} onChange={onChange} required/>
-    {descriptor && <span><p>{descriptor}</p></span>}
-    {error && <h5 className={"error"}>{error}</h5>}
+    <input className={fieldName + (showError ? " error" : "")}
+           type={type}
+           name={fieldName}
+           onChange={onChange} required/>
+    {descriptor && <span><p className={showError ? "error" : ""}>{descriptor}</p></span>}
   </div>
 );
 
